@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="D:\academic\degree\sem4\webprog\ngolistxsld.xsl"?>
+<donation>
+  <ngo category= "National">
+	<name>Hope Foundation</name>
+	<addr> Mumbai,
+		<country>India</country>
+	</addr>
+	<email>hopefoundation@gmail.com</email>
+	<number>987534262</number>
+	<startingyear>2003</startingyear>
+  </ngo>
+
+  <ngo category="International">
+	<name>Red Cross Society</name>
+	<addr>Rio de Janerio,
+		<country>Brazil</country>
+	</addr>
+	<email>rcs@gmail.com</email>
+	<number>345829389</number>
+	<startingyear>1989</startingyear>
+  </ngo>
+
+<ngo category="National">
+	<name>Zeel Charity Trust</name>
+	<addr>Chennai,
+		<country>India</country>
+	</addr>
+	<email>zeelcharity@gmail.com</email>
+	<number>704625477</number>
+	<startingyear>2007</startingyear>
+  </ngo>
+
+<ngo category="International">
+	<name>GreenPeace Organisation</name>
+	<addr>Toronto,
+		<country>Canada</country>
+	</addr>
+	<email>greenpeace@yahoo.com</email>
+	<number>1445678879</number>
+	<startingyear>1975</startingyear>
+  </ngo>
+
+
+ <ngo category="National">
+	<name>Suvidha NGO</name>
+	<addr> Shimla,
+		<country>India</country></addr>
+	<email>suvidha@outlook.com</email>
+	<number>869574893</number>
+	<startingyear>1990</startingyear>
+  </ngo>
+
+
+
+ <ngo category="National">
+	<name>Aadhar Association</name>
+	<addr>Indore,
+		<country>India</country></addr>
+	<email>addharassociation123@gmail.com</email>
+	<number>932567825</number>
+	<startingyear>1981</startingyear>
+  </ngo>
+
+
+
+</donation>

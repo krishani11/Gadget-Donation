@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Login</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+<script src="login.js"></script>
+</head>
+<body onload="checkCookies()">
+	 <div class="box">
+		<img src="userlogo.jpg" onmousedown="onMousedown(this)" class="quote">
+		<h1 id="title" onmouseover="onmouseOver()" onmouseout="onmouseOut()"> L O G I N </h1><br/>
+<form name="loginform" method="post" onreset="onReset()">
+
+<input type="text" name="username" id="username" placeholder="Enter Email Id" onblur="onBlur()"><br><br/>
+
+<input type="password" name="password" placeholder="Enter Password"><br><br/>
+
+<div class="dropdown">
+<SELECT id="s1" >
+<Option value="">Select Type</option>
+<Option value="Admin">Admin</option>
+<Option value="NGO">NGO</option>
+<Option value="Donor">Donor</option>
+</SELECT>
+</div>
+
+<input type="submit" name="Login" value="Login" onclick="login()">
+
+<input type="reset" name="Reset" value="Reset"><br><br/><br>
+
+ <p align="center"><a href=""> Forgot Password?</a></p><br/>
+ <br> <a id="doubleclick" ondblclick="openWin()">Double Click Here to Register </a><br/>
+
+</form>
+</div>
+</body>
+</html> 

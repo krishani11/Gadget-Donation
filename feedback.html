@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+
+<head>
+    <title>Feedback</title>
+</head>
+<link rel="stylesheet" type="text/css" href="feedback.css"/>
+<body>
+    <header>
+        <br><br><br>
+        <h1 align="center">Share your valuable feedback with us.</h1><br><br>
+
+<div class="simpleform">
+
+    <form action="home.html" ng-app="myApp" ng-controller="validateCtrl" 
+name="myForm" novalidate>
+
+        <input type="text" name="fname" placeholder="  Enter Full Name" ng-model="fname"  required><br>
+        <span style="color:red" ng-view="myForm.fname.$dirty && myForm.fname.$invalid">
+	<span ng-show="myForm.fname.$error.required">Full name is required.</span><br><br/>
+        
+        <input type="email" name="email" placeholder="  Email-Id" ng-model="email" required><br>
+                <span style="color:red" ng-view="myForm.email.$dirty && myForm.email.$invalid">
+	<span ng-show="myForm.email.$error.required">Email ID is required.</span>
+	<span ng-show="myForm.email.$error.email">Invalid email address.</span><br>
+
+
+     <input type="text" name="phone" placeholder="  Phone No"  ng-model="phone" required><br>
+     <span style="color:red" ng-view="myForm.phone.$dirty && myForm.phone.$invalid">
+	<span ng-show="myForm.phone.$error.required">Contact number is required.</span><br><br/>
+
+        <input type="text" name="sub" id="button" placeholder="  Subject"  ng-model="sub" required ><br>
+                <span style="color:red" ng-view="myForm.sub.$dirty && myForm.sub.$invalid">
+	<span ng-show="myForm.sub.$error.required">Subject is required.</span><br><br/>
+
+         <textarea name="msg" placeholder="Enter Your Feedback" ng-model="msg" required></textarea><br>
+                 <span style="color:red" ng-view="myForm.msg.$dirty && myForm.msg.$invalid">
+	<span ng-show="myForm.msg.$error.required"> Message is required.</span><br><br/>
+
+         <input class="button" type="submit" name="submit" value="Submit" ng-disabled="myForm.fname.$dirty && myForm.fname.$invalid ||  
+myForm.email.$dirty && myForm.email.$invalid || myForm.sub.$dirty && myForm.sub.$invalid || myForm.phone.$dirty && myForm.phone.$invalid || myForm.msg.$dirty && myForm.msg.$invalid">
+
+        </form>
+
+  </div>
+ </header>
+<script>
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope) {
+    $scope.fname = 'Name';
+    $scope.email = 'name@gmail.com';
+    $scope.phone = '123456789';
+    $scope.sub = 'Subject';
+    $scope.msg = 'Fill some details';
+});
+</script>
+</body>
+</html>

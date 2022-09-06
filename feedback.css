@@ -1,0 +1,79 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(background.jpg);
+	background-attachment: fixed; 
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	font-family: calibri;
+}
+header{
+	background-attachment: fixed; 
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.simpleform
+{
+	width:400px;
+	height:600px;
+	background-color:black;
+	background: rgba(0,0,0,0.7);
+	color:black;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	left:50%;
+	top:75%;
+	text-align: center;
+	padding:70px 30px;
+	box-sizing: border-box;
+	border-radius:20%;
+}
+.simpleform input[type="text"],input[type='email']
+	{
+	border: none;
+	outline: none;
+	background-color: white;
+	color: black;
+	box-sizing: border-box;
+  border: 2px solid black;
+	height: 40px;
+	font-size: 16px;
+
+}
+textarea 
+{
+  width: 84%;
+  height: 75px;
+  color: pink;
+  background-color:white;
+  color: black;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+  font-family: calibri;
+}
+
+.button {
+  border: none;
+	outline:none;
+	height:50px;
+	width: 110px;
+	background-color:blue;
+	color:black;
+	border: 2px solid black;
+	font-size: 20px;
+	position:absolute;
+	left:35%;	
+	border-radius: 30px;
+	transition: 0.4s ease;
+}
+.button[disabled] {
+  background-color:white;
+}
+

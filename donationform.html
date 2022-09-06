@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Donation Form</title>
+    <link rel="stylesheet" href="donationform.css">
+    <script src="donationform.js"></script>
+<body>
+    <h1>Donation Form</h1>
+<div class="donateForm">
+<form name="donateForm" onsubmit="return validateForm()" action="donordash.html" method="post"><br><br/>
+
+<div class="error" id="typeErr"></div>
+ Device Type:<br><br>  
+ <div class="form-inline">
+ <label><input type="radio" id="type" name="type" value="Mobile">Mobile </label>  &nbsp&nbsp&nbsp
+ <label><input type="radio" id="type" name="type" value="Laptop"  >Laptop</label> <br><br>
+ <label><input type="radio" id="type" name="type" value="Desktop"  >Desktop</label> &nbsp&nbsp&nbsp
+ <label><input type="radio" id="type" name="type" value="Tablet"  >Tablet</label> </div><br><br>
+
+
+
+ <div class="error" id="modelErr"></div>
+ Model Number: <br><br><input type="text" name="model" id="model" placeholder="Enter Model Number of the device" size="30" >  <br><br>
+
+
+ <div class="error" id="specifyErr"></div>
+ Specification: <br><br><input type="text" name="specify" id="specify" placeholder="Enter RAM/HDD/OS" size="30" >  <br><br>
+
+
+ <div class="error" id="quanErr"></div>
+ Quantity: <br><br><input type="text" name="quantity" id="quantity" placeholder="Enter number of devices"  >  <br><br>
+
+Receiver Details : <br><br/>
+
+<div class="error" id="fullnameErr"></div>
+ Full Name: <br><br><input type="text" name="fullname" id="fullname" placeholder="Enter Your Full Name" size="30"  onblur="onBlur()">  <br><br>
+
+<div class="error" id="emailErr"></div>
+Email ID:<br><br><input type="text" name="email" id="email" placeholder="Enter Your Email-Id" size="30"><br><br>
+
+
+<div class="error" id="contactErr"></div>
+Contact No: <br> <br>
+
+<input type="text" name="contact" id="contact" size="15" placeholder="Mobile Number" ><br><br>
+
+
+<input type="submit" name="submit" value="Donate" > 
+
+
+</body>
+</html>

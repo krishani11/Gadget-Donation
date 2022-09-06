@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Registration Form</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script>
+<body>
+    <h1>Registration Form</h1>
+<div class="contactForm">
+<form name="contactForm" onsubmit="return validateForm()" action="home.html" method="post">
+
+
+ <div class="error" id="fullnameErr"></div>
+ Full Name: <br><br><input type="text" name="fullname" id="fullname" placeholder="Enter Your Full Name" size="30" >  <br><br>
+
+<div class="error" id="emailErr"></div>
+Email ID:<br><br><input type="text" name="email" id="email" placeholder="Enter Your Email-Id" size="30"><br><br>
+
+<div class="error" id="passwordErr"></div>
+Password:<br><br><input type="password" name="password" id="password" placeholder="Enter Your Password" size="30"><br><br>
+
+<div class="error" id="cpasswordErr"></div>
+Confirm Password:<br><br><input type="password" name="cpassword" id="cpassword" size=8 placeholder="Enter Your Password Again"><br><br>
+
+<div class="error" id="typeErr"></div>
+ Type:<br><br>  
+ <div class="form-inline">
+ <label><input type="radio" id="type" name="type" value="NGO" onchange="onChange(this)">NGO </label>  &nbsp&nbsp&nbsp
+ <label><input type="radio" id="type" name="type" value="individual" onchange="onChange(this)" >Individual</label> </div><br><br>
+
+
+<div class="error" id="contactErr"></div>
+Contact No: <br> <br>
+
+<input type="text" name="contact" id="contact" size="15" placeholder="Mobile Number" ><br><br>
+
+Address:<br><br>
+<div class="error" id="houseErr"></div>
+<input type="text" name="house" id="house" placeholder="House No,Building & Area" size="30" ><br><br>
+
+<div class="error" id="cityErr"></div>
+<input type="text" name="city" id="city" placeholder="City/Town/District" size="30" ><br><br>
+
+<div class="error" id="stateErr"></div>
+<input type="text" name="state" id="state" placeholder="State/Union Territory" size="30" > <br><br>
+
+<div class="error" id="pincodeErr"></div>
+<input type="text" name="pincode" id="pincode" size=10 placeholder="Pincode" ><br><br>
+
+<div class="error" id="countryErr"></div>
+<input type="text" name="country"  id= "country" placeholder="Country" size="30" ><br><br>
+
+<input type="submit" name="submit" value="Create Account" > 
+
+
+</body>
+</html>

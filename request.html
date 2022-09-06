@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+	<title>Request Form</title>
+    <link rel="stylesheet" href="request.css">
+    <script src="request.js"></script>
+<body>
+    <h1>Request Form</h1>
+<div class="reqForm">
+<form name="reqForm" onsubmit="return validate()" action="home.html"  method="post">
+
+
+ <div class="error" id="fullnameErr"></div>
+ Full Name: <br><br><input type="text" name="fullname" id="fullname" placeholder="Enter Your Full Name" size="30" >  <br><br>
+
+<div class="error" id="emailErr"></div>
+Email ID:<br><br><input type="text" name="email" id="email" placeholder="Enter Your Email-Id" onblur="onBlur()" size="30"><br><br>
+
+
+<div class="error" id="typeErr"></div>
+ Type:<br><br>  
+ <div class="form-inline">
+ <label><input type="radio" id="type" name="type" value="Laptop">Laptop </label>  &nbsp&nbsp&nbsp
+ <label><input type="radio" id="type" name="type" value="Mobile" >Mobile</label><br><br>
+ <label><input type="radio" id="type" name="type" value="Tablet" >Tablet</label>  &nbsp&nbsp&nbsp
+ <label><input type="radio" id="type" name="type" value="Desktop" >Desktop</label></div> <br><br>
+
+<div class="error" id="contactErr"></div>
+
+Contact No: <br> <br>
+
+<input type="number" name="contact" id="contact" size="15" placeholder="Enter mobile number" ><br><br>
+
+<div class="error" id="specifyErr"></div>
+Specifications: <br><br>
+
+<input type="text" name="specify" id="specify" size="15" placeholder="OS/RAM/HDD" ><br><br>
+
+
+<input type="submit" name="submit" value="Create Request" > 
+
+</form>
+</div>
+</body>
+</html>

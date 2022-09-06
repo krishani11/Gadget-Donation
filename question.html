@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ask Questions</title>
+<link rel="stylesheet" type="text/css" href="question.css"/>
+
+</head>
+<body>
+<h1>Ask Us!</h1>
+<div id="root"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<script type="text/babel">
+class MyForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { username: '' };
+  }
+  mySubmitHandler = (event) => {
+    event.preventDefault();
+    alert("You are submitting your question " + this.state.username + " You will soon be responded on your email id by our team");
+  }
+  myChangeHandler = (event) => {
+    this.setState({username: event.target.value});
+  }
+  render() {
+    return (
+    <div className='simpleform'>
+      <form onSubmit={this.mySubmitHandler}>
+      <h4>Hello {this.state.username}</h4>
+      
+      <p id='p1'>Enter your name</p>
+
+      <input
+        type='text'
+        id='name'
+        placeholder='Name'
+        onChange={this.myChangeHandler}
+        required
+      /><br/><br/><br/>
+
+      <p id='p2'>Enter your Email ID</p>
+            <input
+        type='email'
+        id='email'
+        placeholder='Email ID'
+        required
+      /><br/><br/><br/>
+
+          
+          <p id='p3'>Enter your Question</p>
+
+            <input
+        type='text'
+        id='question'
+        placeholder='Question'
+        required
+      /><br/><br/> 
+
+      <input
+        type='submit'
+      />
+      </form>
+  </div>
+    );
+  }
+}
+
+ReactDOM.render(<MyForm />, document.getElementById('root'));
+</script>
+</body>
+</html>

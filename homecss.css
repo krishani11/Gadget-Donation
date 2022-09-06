@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Calibri;
+
+}
+
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: screen;
+  
+}
+
+@media only screen and (max-width:600px) /*mobile*/{
+ 
+ .quote {
+    width:90%;
+    height:70%;
+    position:absolute;
+    left:5%;
+  }
+
+.med
+	{
+	
+	position:absolute;
+	left:20%;
+	top:25%;
+	}
+}
+
+@media only screen and (min-width:992px) /*desktop*/ {
+ 
+  .quote {
+    width:60%;
+    height:65%;
+    position:absolute;
+	left:20%;
+	top:32%;
+
+  }
+.med
+	{
+
+	left:35%;
+	position:fixed;
+	top:32%;
+	
+	}
+}
+
+
+
+.main ul {
+	float: left;
+	list-style-type:none;
+	margin-top:25px;
+	color:white;
+
+}
+
+.main ul li{
+	display: inline-block;
+
+}
+
+.main ul li a{
+	text-decoration: bold;
+	color:black;
+	padding: 2px 45px ;
+	 color:black;
+	border-color: black;
+	transition: 0.5s ease;
+}
+
+.main ul li a:hover
+{
+	background-color: #000;
+	color: #fff;
+}
+.main ul li.active a
+{
+	background-color: #000;
+	color: #fff;
+}
+
+.quote
+{
+
+	color:#7ad7f0;
+	border-radius:100%;
+	position:absolute;
+	top:19%;
+	text-decoration: bold;
+	background:rgba(0,0,0,0.8);
+	font-size:40px;
+	text-align: center;
+	border-radius:30px;
+	box-shadow: 30px 30px 60px #4c516d, -30px -30px 80px #4c516d;	
+
+
+}
+
+.quote p
+{
+	  text-shadow: 2px 2px 5px blue;
+
+
+}
+ 
+.end
+{
+	position:absolute;
+	bottom:5%;
+
+}
+
+
+.end a
+{
+	color:black;
+}
+
+.med
+{
+	width:200px;
+	height:150px;
+	position:absolute;
+
+	border-radius:100%;
+}
+
+.quote
+{
+	animation:fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation{
+0%{
+	opacity:0;
+}
+
+100%
+{
+	opacity:1;
+}
+}
+
+
+.med
+{
+	animation:fadeInAnimation ease 8s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}

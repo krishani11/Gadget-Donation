@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="donationcentrexsl.xsl"?>
+<Donationcentre>
+<centre type="Donation">
+	<Name>Mumbai Book Donation</Name>
+	<Email_Id>mumbaibookdonation@gmail.com</Email_Id>
+	<Address>Mumbai</Address>
+	<Year_of_establishment>2009</Year_of_establishment>
+</centre>
+<centre type="Supply">
+	<Name>Pune Book Supply</Name>
+	<Email_Id>punebooksupply@gmail.com</Email_Id>
+	<Address>Pune</Address>
+	<Year_of_establishment>2011</Year_of_establishment>
+</centre>
+<centre type="Donation">
+	<Name>Thane Book Donation</Name>
+	<Email_Id>thanebookdonation@gmail.com</Email_Id>
+	<Address>Thane</Address>
+	<Year_of_establishment>2013</Year_of_establishment>
+</centre>
+<centre type="Supply">
+	<Name>Mumbai Book Supply</Name>
+	<Email_Id>mumbaibooksupply@gmail.com</Email_Id>
+	<Address>Mumbai</Address>
+	<Year_of_establishment>2012</Year_of_establishment>
+</centre>
+<centre type="Donation">
+	<Name>Nashik Book Donation</Name>
+	<Email_Id>nashikbookdonation@gmail.com</Email_Id>
+	<Address>Nashik</Address>
+	<Year_of_establishment>2016</Year_of_establishment>
+</centre>
+</Donationcentre>

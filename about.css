@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Calibri;
+}
+header{
+	background-image:url(background.jpg); 
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+
+}
+
+h1
+{
+position:fixed;
+left:40%;
+top:5%;
+font-size: 45px;
+}
+
+
+h2
+{
+text-shadow: 2px 2px 5px blue;
+font-size: 32px;
+}
+
+
+.obj ,.vis,.join
+{
+
+	width:350px;
+	height:450px;
+	background-color:black;
+	color:white;
+	background:rgba(0,0,0,0.7);
+	position: absolute;
+	transform: translate(-50%,-50%);
+	left:17%;
+	top:58%;
+	padding:70px 30px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	font-size:20px;
+
+
+}
+.vis
+{
+
+	left:48%;
+
+}
+.join
+{
+
+
+	left:80%;
+	
+}
+
+.joinus ,.ourvision ,.med
+{
+	width:70px;
+	height:70px;
+	left:150px;
+	top:60px;
+	position: absolute;
+	border-radius: 50%;
+
+}
+.ourvision
+{
+
+	left:200px;
+	top:60px;
+
+
+}
+.med
+{
+	
+	left:240px;
+	top:60px;
+
+}

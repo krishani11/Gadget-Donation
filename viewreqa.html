@@ -1,0 +1,59 @@
+<HTML ng-app = "myapp">  
+<head>
+      <TITLE>View Donations</TITLE>  
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script> 
+    <link rel="stylesheet" href="viewreq.css">
+    </head> 
+      <script>  
+           var myapp=angular.module("myapp",[]);  
+           /*myapp.filter('displayPageData', function() {  
+                             return function(input, start) {  
+                             start = +start; //parse to int  
+                             return input.slice(start);  
+                             }  
+                        });*/
+           myapp.controller("myappcont",function($scope){  
+                $scope.currentPage = 0;  
+  
+           $scope.students=[  
+           {Name:"Kailash",Email:"kailash@gmail.com",Requirement:"Laptop: Windows OS,8GB RAM,500GB HDD",Contact:"919234726"},  
+           {Name:"Alex",Email:"alex123@yahoo.com",Requirement:"Mobile: Android OS,64GB Memory",Contact:"178635289"},  
+          {Name:"Leela",Email:"lily@hotmail.com",Requirement:"Tablet: Kindle",Contact:"23098644"},  
+           {Name:"Rose",Email:"roset@gmail.com",Requirement:"Mobile: iOS 32GB RAM",Contact:"9190865432"},    
+     
+          {Name:"Max",Email:"max908@gmail.com",Requirement:"Laptop: iOS,16GB RAM,1TB HDD",Contact:"378901081"}];  
+           });  
+  
+      </script>  
+      <BODY ng-controller="myappcont">  
+        <header>
+  <div class="main">
+    <ul>
+      <li><a style="font-size: 25px" href="admindash.html"> Home</a></li>
+      <li><a style="font-size: 25px" href="#">View Donator Details</a></li>
+      <li><a style="font-size: 25px" href="ngolist.xml">View NGO Details</a></li>
+      <li class="active"><a style="font-size: 25px" href="#">View Requests</a></li>
+      <li><a style="font-size: 25px" href="home.html"> Log Out</a></li>
+
+    </ul>
+  </div>
+        <table border="1" style="width:80%"> 
+            <thead> 
+                 <tr>  
+                    <th>Name</th>  
+                    <th>Email</th>  
+                    <th>Requirement</th>  
+                    <th>Contact</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr ng-repeat="x in students">  
+                    <td>{{x.Name}}</td>  
+                    <td>{{x.Email}}</td>  
+                    <td>{{x.Requirement}}</td>  
+                    <td>{{x.Contact}}</td>  
+                </tr>  
+            </tbody>  
+       </table>  
+    </BODY>  
+ </HTML>

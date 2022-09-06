@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View Donators</title>
+<link rel="stylesheet" type="text/css" href="viewdonator.css"/>
+
+</head>
+<body>
+
+<header>
+	<div class="main">
+		<ul>
+			<li><a style="font-size: 25px" href="admindash.html"> Home</a></li>
+			<li class="active"><a style="font-size: 25px" href="#">View Donator Details</a></li>
+			<li><a style="font-size: 25px" href="ngolista.xml">View NGO Details</a></li>
+			<li><a style="font-size: 25px" href="viewreqa.html">View Requests</a></li>
+			<li><a style="font-size: 25px" href="home.html"> Log Out</a></li>
+
+		</ul>
+	</div>	
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<script type="text/babel">
+class Table extends React.Component {
+   constructor(props) {
+      super(props)
+      this.state = {
+         students: [
+            {id:1, name:'Wasif',  email: 'wasif@email.com',contact:704518293111,address:'bandra west' },
+            { id:2,name:'Sunaina',  email: 'wasif@email.com',contact:704518293111,address:'bandra west' },
+            { id:3,name:'Ashwin',  email: 'wasif@email.com',contact:704518293111,address:'bandra west' },
+            { id:4,name:'Yash',  email: 'wasif@email.com',contact:704518293111,address:'bandra west' },
+            { id:5,name:'Purvi',  email: 'wasif@email.com',contact:704518293111,address:'bandra west' }
+         ]
+      }
+   }
+
+renderTableHeader() {
+      let header = Object.keys(this.state.students[0])
+      return header.map((key, index) => {
+         return <th key={index}>{key.toUpperCase()}</th>
+      })
+   }
+
+   renderTableData() {
+      return this.state.students.map((student, index) => {
+         const { id,name,email,contact,address } = student //destructuring
+         return (
+            <tr key={id}>
+               <td>{id}</td>
+               <td>{name}</td>
+               <td>{email}</td>
+               <td>{contact}</td>
+               <td>{address}</td>
+            </tr>
+         )
+      })
+   }
+
+   render() {
+      return (
+         <div>
+           
+            <table id='students'>
+               <tbody>
+             <tr>{this.renderTableHeader()}</tr>
+                  {this.renderTableData()}
+               </tbody>
+            </table>
+         </div>
+      )
+   }
+}
+
+ReactDOM.render(<Table />, document.getElementById('root'));
+</script>
+</body>
+</html>
